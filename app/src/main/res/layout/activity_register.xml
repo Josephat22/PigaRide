@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dash_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_header_blue"
+            android:paddingTop="48dp"
+            android:paddingBottom="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_account_title"
+                android:textColor="@color/text_white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/create_account_subtitle"
+                android:textColor="@color/text_white_soft"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/i_am_a_label"
+                android:textColor="@color/text_white_soft"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/btnRolePassenger"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_role_pill_selected"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_person_outline"
+                        app:tint="@color/text_white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/passenger"
+                        android:textColor="@color/text_white"
+                        android:textStyle="bold"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnRoleRider"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_icon_square_blue_rounded"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_motorcycle_outline" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/rider"
+                        android:textColor="@color/background"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Full name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="@string/full_name"
+                android:textColor="@color/text_white_soft"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_password_field"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_person_outline" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/text_white"
+                    android:textColorHint="@color/hint_grey"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp" />
+            </LinearLayout>
+
+            <!-- Phone -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="@string/phone_number"
+                android:textColor="@color/text_white_soft"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <Spinner
+                    android:id="@+id/spinnerCountryCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:background="@drawable/bg_password_field"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:minWidth="110dp"
+                    android:popupBackground="@color/card_dark"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_password_field"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <EditText
+                        android:id="@+id/etPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="712 345 678"
+                        android:inputType="phone"
+                        android:textColor="@color/text_white"
+                        android:textColorHint="@color/hint_grey"
+                        android:paddingTop="14dp"
+                        android:paddingBottom="14dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="@string/email_optional"
+                android:textColor="@color/text_white_soft"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_password_field"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_email" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:background="@android:color/transparent"
+                    android:hint="you@example.com"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/text_white"
+                    android:textColorHint="@color/hint_grey"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp" />
+            </LinearLayout>
+
+            <!-- Password -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="@string/password"
+                android:textColor="@color/text_white_soft"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_password_field"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_lock" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/create_password_hint"
+                    android:inputType="textPassword"
+                    android:textColor="@color/text_white"
+                    android:textColorHint="@color/hint_grey"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp" />
+
+                <ImageView
+                    android:id="@+id/ivTogglePassword"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_visibility"
+                    android:clickable="true"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/password_min_chars"
+                android:textColor="@color/hint_grey"
+                android:textSize="12sp" />
+
+            <!-- Rider-only fields -->
+            <LinearLayout
+                android:id="@+id/riderFieldsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/license_number"
+                    android:textColor="@color/text_white_soft"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/etLicenseNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_password_field"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:textColor="@color/text_white"
+                    android:inputType="text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/vehicle_reg_no"
+                    android:textColor="@color/text_white_soft"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/etVehicleRegNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_password_field"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:textColor="@color/text_white"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/terms_notice"
+                android:textColor="@color/text_white_soft"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/bg_pill_button"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create_account_btn"
+                    android:textColor="@color/text_white"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvGoToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_gravity="center"
+                android:text="@string/have_account_login"
+                android:textColor="@color/link_color"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

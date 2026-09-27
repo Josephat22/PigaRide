@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvAvatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_avatar_circle"
+        android:backgroundTint="@color/avatar_bg"
+        android:gravity="center"
+        android:textColor="@color/avatar_text"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="14dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/text_white_soft"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvStatusBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_badge"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

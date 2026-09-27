@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">PigaRide</string>
+    <string name="estimated_fare">Estimated fare: KES 0</string>
+    <string name="available">Status: Online</string>
+    <string name="unavailable">Status: Offline</string>
+    <string name="nav_open">Open navigation drawer</string>
+    <string name="nav_close">Close navigation drawer</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="passenger">Passenger</string>
+    <string name="rider">Rider</string>
+    <string name="license_number">License Number</string>
+    <string name="vehicle_reg_no">Vehicle Registration No.</string>
+    <string name="no_account_register">Don\'t have an account? Register</string>
+    <string name="have_account_login">Already have an account? Login</string>
+    <string name="pickup_location">Pickup Location</string>
+    <string name="dropoff_location">Drop-off Location</string>
+    <string name="distance_km">Distance (km)</string>
+    <string name="request_ride">Request Ride</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="trip_history">Trip History</string>
+    <string name="logout">Logout</string>
+    <string name="manage_riders">Manage Riders</string>
+    <string name="approve">Approve</string>
+    <string name="suspend">Suspend</string>
+    <string name="refresh">Refresh</string>
+    <string name="total_riders">Total riders</string>
+    <string name="total_trips">Total trips</string>
+    <string name="recent_trips">Recent trips</string>
+    <string name="view_all">View all</string>
+    <string name="admin_dashboard_title">Admin dashboard</string>
+    <string name="where_headed">Where are you headed today?</string>
+    <string name="current_location">Current location</string>
+    <string name="last_trip">Last trip</string>
+    <string name="search_hint">Search by name or plate</string>
+    <string name="filter_all">All</string>
+    <string name="filter_approved">Approved</string>
+    <string name="filter_pending">Pending</string>
+    <string name="filter_suspended">Suspended</string>
+    <string name="create_account_title">Create account</string>
+    <string name="create_account_subtitle">Join BodaBoda today</string>
+    <string name="i_am_a_label">I am a…</string>
+    <string name="phone_number">Phone number</string>
+    <string name="email_optional">Email (optional)</string>
+    <string name="create_password_hint">Create a password</string>
+    <string name="password_min_chars">At least 8 characters</string>
+    <string name="terms_notice">By creating an account you agree to the Terms and Privacy Policy.</string>
+    <string name="create_account_btn">Create account</string>
+    <string name="country_code">+256</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="sign_in_subtitle">Sign in to continue</string>
+    <string name="phone_or_email">Phone or email</string>
+    <string name="phone_or_email_hint">Enter your phone or email</string>
+    <string name="enter_password_hint">Enter your password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="sign_in_btn">Sign in</string>
+    <string name="about_title">About</string>
+    <string name="app_version">Version 1.0.0</string>
+    <string name="app_description">Piga Ride is a role-based boda boda ride-sharing app designed for Kenya. It connects passengers with verified motorcycle taxi riders quickly and efficiently.</string>
+    <string name="features_header">Features</string>
+    <string name="feature_role_based">Role-based access for passengers, riders and admins</string>
+    <string name="feature_offline">Offline-first, works without internet</string>
+    <string name="feature_verification">Rider verification and admin approval</string>
+    <string name="feature_fare">Fare estimate before booking</string>
+    <string name="feature_history">Full trip history for all users</string>
+    <string name="developer_header">Developer</string>
+    <string name="developer_name">Josephat Ontuga</string>
+    <string name="developer_title">Diploma in ICT Level 6</string>
+    <string name="developer_school">Sigalagala National Polytechnic</string>
+    <string name="developer_email">ceetech8090@gmail.com</string>
+    <string name="developer_github">Josephat22</string>
+    <string name="built_with_header">Built with</string>
+    <string-array name="country_codes">
+        <item>+254 Kenya</item>
+        <item>+255 Tanzania</item>
+        <item>+256 Uganda</item>
+        <item>+250 Rwanda</item>
+        <item>+251 Ethiopia</item>
+        <item>+252 Somalia</item>
+        <item>+253 Djibouti</item>
+        <item>+257 Burundi</item>
+        <item>+1 USA</item>
+        <item>+44 UK</item>
+        <item>+91 India</item>
+        <item>+27 South Africa</item>
+        <item>+234 Nigeria</item>
+        <item>+233 Ghana</item>
+    </string-array>
+</resources>

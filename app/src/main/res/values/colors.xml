@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary -->
+    <color name="blue_primary">#1976D2</color>
+    <color name="blue_dark">#1565C0</color>
+    <color name="blue_light">#42A5F5</color>
+    <color name="blue_surface">#E3F2FD</color>
+    <color name="white">#FFFFFF</color>
+    <!-- Backgrounds -->
+    <color name="background">#F5F7FA</color>
+    <color name="card_white">#FFFFFF</color>
+    <color name="card_dark">#424242</color>
+
+    <!-- Text -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_white_soft">#E0E0E0</color>
+
+    <!-- Status -->
+    <color name="green_success">#2E7D32</color>
+    <color name="red_error">#C62828</color>
+    <color name="orange_warning">#F57C00</color>
+
+    <!-- Divider -->
+    <color name="divider">#E0E0E0</color>
+    <!-- Aliases used by dashboard/auth layouts -->
+    <color name="primary">@color/blue_primary</color>
+    <color name="primary_dark">@color/blue_dark</color>
+    <color name="accent">@color/orange_warning</color>
+    <color name="text_light">@color/text_white</color>
+    <color name="text_dark">@color/text_primary</color>
+    <color name="offline_grey">@color/text_secondary</color>
+    <color name="online_green">@color/green_success</color>
+    <color name="card_bg">#F4F6F8</color>
+    <!-- Dark dashboard theme -->
+    <color name="dash_bg">#0E0E0E</color>
+    <color name="dash_card">#1C1C1E</color>
+    <color name="dash_divider">#2A2A2C</color>
+    <color name="icon_bg_blue">#152A47</color>
+    <color name="icon_bg_orange">#3A2410</color>
+    <color name="avatar_bg">#152A47</color>
+    <color name="avatar_text">#64B5F6</color>
+    <color name="badge_completed_bg">#123A20</color>
+    <color name="badge_completed_text">#4CAF50</color>
+    <color name="badge_progress_bg">#3A2410</color>
+    <color name="badge_progress_text">#FFA726</color>
+    <color name="link_blue">#42A5F5</color>
+    <!-- Manage riders screen -->
+    <color name="chip_selected_bg">@color/blue_primary</color>
+    <color name="chip_unselected_bg">#2A2A2C</color>
+    <color name="chip_unselected_text">#B0B0B0</color>
+    <color name="badge_approved_bg">#123A20</color>
+    <color name="badge_approved_text">#4CAF50</color>
+    <color name="badge_pending_bg">#3A2410</color>
+    <color name="badge_pending_text">#FFA726</color>
+    <color name="badge_suspended_bg">#3A1414</color>
+    <color name="badge_suspended_text">#EF5350</color>
+    <!-- Register screen -->
+    <color name="header_gradient_top">#1E88E5</color>
+    <color name="header_gradient_bottom">#1565C0</color>
+    <color name="hint_grey">#6E6E70</color>
+    <color name="link_color">#42A5F5</color>
+    <!-- About screen -->
+    <color name="version_badge_bg">#152A47</color>
+    <color name="version_badge_text">#64B5F6</color>
+    <color name="feature_icon_bg">#152A47</color>
+    <color name="tech_chip_bg">#2A2A2C</color>
+</resources>

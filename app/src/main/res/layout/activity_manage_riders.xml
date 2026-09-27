@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dash_bg">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue_primary"
+        app:titleTextColor="@color/text_white"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_search_field"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_search" />
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:background="@android:color/transparent"
+            android:hint="@string/search_hint"
+            android:textColorHint="@color/text_white_soft"
+            android:textColor="@color/text_white"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:id="@+id/chipAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_chip_selected"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/filter_all"
+                android:textColor="@color/text_white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chipApproved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_chip_unselected"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/filter_approved"
+                android:textColor="@color/chip_unselected_text" />
+
+            <TextView
+                android:id="@+id/chipPending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_chip_unselected"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/filter_pending"
+                android:textColor="@color/chip_unselected_text" />
+
+            <TextView
+                android:id="@+id/chipSuspended"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_chip_unselected"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/filter_suspended"
+                android:textColor="@color/chip_unselected_text" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRiders"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:clipToPadding="false" />
+
+</LinearLayout>
